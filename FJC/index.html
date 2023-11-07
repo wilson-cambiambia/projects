@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <style id="estilo"></style>
+</head>
+<body>
+        <div class="menu-oculto" onmouseover="menu()" onmouseout="fechar()">
+            <div class="botao">
+                <button onclick="fechar()">X</button>
+            </div>
+            <div class="logo">
+                <h1>FJC</h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="assets/error.html">Planos</a></li>
+                    <li><a href="assets/error.html">Subscrições</a></li>
+                    <li><a href="assets/error.html">Minhas Playlists</a></li>
+                    <li><a href="assets/error.html">Albuns Gratis</a></li>
+                    <li><a href="assets/error.html">Quem sou eu?</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    <!--cabeçalho-->
+    <nav class="header">
+        <!--logo-->
+        <div class="logo">
+            <h2><a href="index.html">FJC</a></h2>
+        </div>
+
+        <!--menu-->
+        <div class="menu">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets/error.html">Sobre</a></li>
+                <li><a href="assets/error.html">Login</a></li>
+                <li onmouseover="menu()" onmouseout="fechar()"><img src="imgs/mais.png" alt=""></li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="main">
+        <img src="imgs/welcome.png" alt="">
+        
+    </div>
+
+    <div class="cards">
+        <section>
+            <a href="imgs/Alma.jpg">
+                <img src="imgs/Alma.jpg" alt="">
+                <h5>ALMA</h5>
+                <h5>Puto Portugues</h5>
+            </a>
+        </section>
+        <section>
+            <a href="imgs/Capa Do Álbum 1.jpg">
+                <img src="imgs/Capa Do Álbum 1.jpg" alt="">
+                <h5>AUGUSTA</h5>
+                <h5>Matias Damasio</h5>
+            </a>
+        </section>
+        <section>
+            <a href="imgs/Capa Do Álbum 2.jpg">
+                <img src="imgs/Capa Do Álbum 2.jpg" alt="">
+                <h5>KIZOMBEIRA</h5>
+                <h5>Yola Semedo</h5>
+            </a>
+        </section>
+        <section>
+            <a href="imgs/Capa Do Álbum.jpg">
+                <img src="imgs/Capa Do Álbum.jpg" alt="">
+                <h5>SINCERA</h5>
+                <h5>Perola</h5>
+            </a>
+        </section>
+    </div>
+
+    <footer style="text-align: center; padding: 5px;">
+        <h5>AQUI ENCONTRAS O MELHOR DA MUSICA ANGOLANA</h5>
+    </footer>
+
+    <script>
+        function menu(){
+            document.getElementById("estilo").innerHTML = `
+            .menu-oculto{
+                visibility: visible;
+                transition: 2s;
+            }
+            `;
+        }
+        function fechar(){
+            document.getElementById("estilo").innerHTML = `
+            .menu-oculto,button{
+                visibility: hidden;
+                transition: 100ms;
+            }
+            `;
+        }
+    </script>
+</body>
+</html>
