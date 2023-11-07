@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*estilo corpo*/
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+/*estilo nav header*/
+.header{
+    background-color: rgb(49, 49, 49);
+    display: inline-flex;
+    padding: 5px;
+    width: 100%;
+    height: 70px;
+}
+
+.header .logo{
+    width: 70%;
+    font-size: 16px;
+    padding: 5px;
+    margin: auto;
+}
+
+.header .menu{
+    width: 25%;
+    margin: auto;
+}
+
+.header .menu ol li{
+    width: 20%;
+    display: inline-block;
+    margin: auto 3px;
+}
+
+.header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.header .menu ol li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.header .menu ol li img{
+    width: 30%;
+    vertical-align: middle;
+}
+
+.menu-oculto{
+    background-color: rgb(49, 49, 49);
+    width: 20%;
+    height: 100vh;
+    position: absolute;
+    margin-left: 80%;
+    visibility: hidden;
+    background: linear-gradient(180deg, rgb(92, 92, 92), rgb(101, 144, 157));
+    transition: 200ms;
+}
+
+.menu-oculto .botao{
+    visibility: hidden;
+}
+
+.menu-oculto .logo{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-oculto .logo h1{
+    margin: 60px auto;
+    background-color: gray;
+    width: 50%;
+    padding: 40px;
+    border-radius: 100px;
+}
+
+.menu-oculto .menu ul li{
+    list-style: none;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.menu-oculto .menu ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.fechar{
+    text-align: right;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgba(128, 128, 128, 0.385);
+    border-radius: 20px;
+    transition: 200ms;
+}
+
+
+/*estilo de main*/
+.main{
+    width: 100%;
+    text-align: center;
+    height: 230px;
+    margin: 0 auto;
+}
+
+.main img{
+    width: 25%;
+    text-align: center;
+}
+
+.erro{
+    width: 80%;
+    margin: auto;
+}
+
+.cards{
+    width: 100%;
+    margin-bottom: 0;
+    height: 326px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    margin: auto;
+}
+
+section{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+section:hover{
+    padding: 5px;
+    transition: 200ms;
+}
+
+section img{
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+a{
+    padding: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media(max-width: 500px){
+    body{
+        height: auto;
+    }
+
+    .header{
+        background-color: rgb(49, 49, 49);
+        display: inline-flex;
+        padding: 5px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .header .logo{
+        width: 40%;
+        font-size: 16px;
+        padding: 5px;
+        margin: auto;
+    }
+    
+    .header .menu{
+        width: 60%;
+        margin: auto;
+    }
+    
+    .header .menu ol li{
+        width: 20%;
+        display: inline-block;
+        margin: auto 3px;
+    }
+    
+    .header a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .header .menu ol li a:hover{
+        border-bottom: 2px solid white;
+    }
+    
+    .header .menu ol li img{
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    .menu-oculto{
+        background-color: rgb(49, 49, 49);
+        width: 100%;
+        height: 150%;
+        position: absolute;
+        margin: 0%;
+        visibility: hidden;
+        background: linear-gradient(180deg, rgb(92, 92, 92), rgb(101, 144, 157));
+        transition: 200ms;
+        font-size: 30px;
+    }
+
+    .menu-oculto .botao{
+        visibility: hidden;
+        text-align: right;
+        padding: 10px;
+    }
+
+    .menu-oculto:hover .botao{
+        visibility: visible;
+        transition: 200ms;
+    }
+
+    .botao button{
+        font-size: 30px;
+        font-weight: bold;
+        background-color: gray;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .main{
+        width: 100%;
+        text-align: center;
+        height: 150px;
+        margin: 0 auto;
+    }
+    
+    .main img{
+        width: 50%;
+        text-align: center;
+    }
+    
+    .cards{
+        width: 100%;
+        margin-bottom: 0;
+        height: auto;
+        background-color: rgb(49, 49, 49);
+        display: block;
+        margin: auto;
+        padding: 8px;
+    }
+    
+    section{
+        width: 99%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    section:hover{
+        padding: 5px;
+        transition: 200ms;
+    }
+    
+    section img{
+        width: 50%;
+        margin: auto;
+        border-radius: 10px;
+    }
+    
+    a{
+        padding: 6px;
+        text-decoration: none;
+        color: white;
+    }
+}
